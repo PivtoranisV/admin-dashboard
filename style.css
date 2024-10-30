@@ -152,7 +152,9 @@
     flex-grow: 1;
 }
 
-.projects>p {
+.projects>p,
+.announcements>p,
+.trending>p {
     font-weight: bold;
     font-size: 1.2rem;
 }
@@ -175,7 +177,8 @@
     gap: 15px;
 }
 
-.announcements .card {
+.announcements .card,
+.trending .card {
     margin-top: 20px;
     background-color: var(--secondary_text_color);
     border-radius: 10px;
@@ -185,11 +188,20 @@
     flex-direction: column;
 }
 
-.announcements>p {
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
 hr {
     margin: 15px 0;
+}
+
+.trending {
+    align-self: end;
+}
+
+.trending img {
+    width: 40px;
+}
+
+.trending .card div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
